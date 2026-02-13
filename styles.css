@@ -1,0 +1,24 @@
+.row-box {
+  display: flex;
+  width: 100%;
+}
+
+.image-box {
+  flex: 0 0 150px; /* image box is ALWAYS 200px wide */
+}
+
+.text-box {
+  flex: 1; /* text takes the remaining space */
+  padding: 10px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* space between rows */
+}

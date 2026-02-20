@@ -1,24 +1,83 @@
+/* creates card in aboutUs.html */
 .row-box {
+    width: 250px;
+    height: 350px;   /* taller to fit image + text */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* wraps cards horizontally and evenly */
+.flex-container {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;        /* allow multiple per row */
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
 }
 
+/* text content for each card */
 .image-box {
-  flex: 0 0 150px; /* image box is ALWAYS 200px wide */
+    width: 150px;       /* smaller than the card */
+    height: 150px;      /* same as width */
+    margin: 15px auto 0 auto;    /* center horizontally */
+    overflow: hidden;
+    border-radius: 50%; /* optional if you want circular container */
 }
 
+/* makes images cover their containers */
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* crop and maintain aspect ratio */
+    border-radius: 50%;  /* perfectly circular */
+}
+
+/* changes font to italic */
+.italic-font {
+  font-family: 'Italic', serif;
+}
 .text-box {
   flex: 1; /* text takes the remaining space */
   padding: 10px;
 }
 
-.image-box img {
-  width: 100%;
-  height: auto;
+
+
+
+/* for styling the top of the header */
+.header-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.6); /* transparent */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+
+    padding: 10px 20px;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px; /* space between rows */
+/* change background color */
+.background {
+    background-color: #f0f0f0; /* light gray background */
+}
+
+/* hero section styling */
+.hero-section {
+  position: relative;
+}
+
+/* contains text over the hero image */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
 }

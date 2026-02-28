@@ -28,12 +28,14 @@
   gap: 20px;
   justify-content: center;
   margin-top: 40px;
-  padding: 0 100px; /* add horizontal padding to prevent edge crowding */
+  padding: 0 100px;
+  /* add horizontal padding to prevent edge crowding */
 }
 
 /* override width behavior ONLY for bottom cards */
 .bottom-flex-container .row-box {
-  flex: 1;        /* makes them stretch evenly */
+  flex: 1;
+  /* makes them stretch evenly */
   max-width: none;
 }
 
@@ -119,6 +121,11 @@
   padding: 10px 20px;
 }
 
+.banner {
+  width: 1700px;
+  height: 250px;
+}
+
 /* change background color */
 .background {
   background-color: #f0f0f0;
@@ -134,7 +141,7 @@
 .hero-text {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 35%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;

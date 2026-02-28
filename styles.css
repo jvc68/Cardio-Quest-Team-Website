@@ -1,70 +1,135 @@
 /* creates card in aboutUs.html */
 .row-box {
-    width: 250px;
-    height: 350px;   /* taller to fit image + text */
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
+  width: 250px;
+  height: 350px;
+  /* taller to fit image + text */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 /* wraps cards horizontally and evenly */
 .flex-container {
   display: flex;
-  flex-wrap: wrap;        /* allow multiple per row */
+  flex-wrap: wrap;
+  /* allow multiple per row */
   gap: 20px;
   justify-content: center;
   margin-top: 40px;
 }
 
+/* Styles for bottom container in aboutUs.html */
+.bottom-flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0 100px;
+  /* add horizontal padding to prevent edge crowding */
+}
+
+/* override width behavior ONLY for bottom cards */
+.bottom-flex-container .row-box {
+  flex: 1;
+  /* makes them stretch evenly */
+  max-width: none;
+}
+
+
 /* text content for each card */
 .image-box {
-    width: 150px;       /* smaller than the card */
-    height: 150px;      /* same as width */
-    margin: 15px auto 0 auto;    /* center horizontally */
-    overflow: hidden;
-    border-radius: 50%; /* optional if you want circular container */
+  width: 150px;
+  /* smaller than the card */
+  height: 150px;
+  /* same as width */
+  margin: 15px auto 0 auto;
+  /* center horizontally */
+  overflow: hidden;
+  border-radius: 50%;
+  /* optional if you want circular container */
 }
 
 /* makes images cover their containers */
 .image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;   /* crop and maintain aspect ratio */
-    border-radius: 50%;  /* perfectly circular */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* crop and maintain aspect ratio */
+  border-radius: 50%;
+  /* perfectly circular */
 }
 
 /* changes font to italic */
 .italic-font {
   font-family: 'Italic', serif;
 }
+
 .text-box {
-  flex: 1; /* text takes the remaining space */
+  flex: 1;
+  /* text takes the remaining space */
+  padding: 10px;
+}
+
+.link-container {
+  display: grid;
+  grid-template-columns: 20vh;
+}
+
+.link-box {
+  width: 98vw;
+  height: 250px;
+  padding: 10px;
+  margin: 10px;
+  /* taller to fit image + text */
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.link-image-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  align-self: left;
+  border-radius: 20px;
+}
+
+.link {
+  /* text takes the remaining space */
   padding: 10px;
 }
 
 
 
-
 /* for styling the top of the header */
 .header-bar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
-    background: rgba(255, 255, 255, 0.6); /* transparent */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+  background: rgba(255, 255, 255, 0.6);
+  /* transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari support */
 
-    padding: 10px 20px;
+  padding: 10px 20px;
+}
+
+.banner {
+  width: 1700px;
+  height: 250px;
 }
 
 /* change background color */
 .background {
-    background-color: #f0f0f0; /* light gray background */
+  background-color: #f0f0f0;
+  /* light gray background */
 }
 
 /* hero section styling */
@@ -76,7 +141,7 @@
 .hero-text {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 35%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;

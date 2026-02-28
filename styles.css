@@ -22,6 +22,22 @@
   margin-top: 40px;
 }
 
+/* Styles for bottom container in aboutUs.html */
+.bottom-flex-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 0 100px; /* add horizontal padding to prevent edge crowding */
+}
+
+/* override width behavior ONLY for bottom cards */
+.bottom-flex-container .row-box {
+  flex: 1;        /* makes them stretch evenly */
+  max-width: none;
+}
+
+
 /* text content for each card */
 .image-box {
   width: 150px;

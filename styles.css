@@ -122,8 +122,9 @@
 }
 
 .banner {
-  width: 1700px;
+  width: 100%;
   height: 250px;
+  object-fit: cover;
 }
 
 /* change background color */
@@ -135,6 +136,8 @@
 /* hero section styling */
 .hero-section {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* contains text over the hero image */

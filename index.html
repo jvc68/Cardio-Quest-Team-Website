@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    <title>Home Page</title>
+    <title>CardioCare Quest</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="background">
     <div class="header-bar container-fluid d-flex flex-wrap align-items-center">
         <img src="images/HeartlineLogo.png" alt="Cardio Quest Logo" width="80" class="me-3">
@@ -22,71 +23,75 @@
     </div>
 
     <div class="hero-section">
-    <img src="./images/Banner.png" class="banner" alt="Hero">
-    <div class="hero-text">
-        <h1>Welcome to the CardioCare Quest Project Website!</h1>
-    </div>
+        <img src="./images/Banner.png" class="banner" alt="Hero">
+        <div class="hero-text">
+            <h1>Welcome to the CardioCare Quest Project Website!</h1>
+        </div>
     </div>
 
     <div class="container my-4">
         <h2 style="border-bottom: 2px solid #ccc;">Project Description</h2>
-        <p>Hypertension is globally estimated to affect 1.4 billion adults, with only 25% of that 
-            population having it under control. This problem disproportionately affects the 
-            indigenous communities, facing prevalence rates that are 10-20% percent higher 
-            than non-indigenous groups as a result of systemic healthcare inequalities and 
-            cultural mismatches in medical intervention.
-
-            Our client, Dr. Jared Duval, aims to address this issue with CardioCare Quest, an 
-            NIH funded mobile application that replaces the isolating and “clinical” feel of 
-            current health apps to encourage a culturally grounded form of play. Rather than a 
-            simple tracker, CardioCare Quest allows users to track heart health related data by 
-            participating in culturally-relevant health games.
-
-            Our role in this project is to build the Twine-integrated app shell, allowing users 
-            to “write” their own cultural narratives directly into the game for others to play. 
-            Additionally, we will be designing a number of games based on workshops conducted 
-            alongside community members. This app lays the foundation for future interventions 
-            that are culturally resonant and community-led alongside reducing health 
-            disparities for groups that have historically been underserved by both healthcare 
-            and technology.
+        <p>Hypertension affects 1.4 billion adults worldwide, but only 25% have the condition under
+            control. For Indigenous communities, the crisis is even more acute, with prevalence rates
+            10-20% higher than non-Indigenous groups.
         </p>
-        <h2 style="border-bottom: 2px solid #ccc;">Envisioned Solution</h2>
-        <p>Our solution consists of a Unity-based app shell that manages the user state, 
-            navigation, and clinical telemetry. Within this shell, we are implementing a game 
-            architecture where individual health factors such as diet, exercise, and medication 
-            are addressed through distinct games.</p>
-
-        <h4>Implementation Details</h4>
+        <p>This disparity isn't just a medical failure; it's a technological one. Standard healthcare tools
+            often fail to account for cultural nuances, leading to a "digital divide" where medical
+            interventions feel foreign and clinical barriers prevent life-saving care.
+        </p>
+ 
+        <h4>The Problem</h4>
+        <p>Primary clinical hypertension tracking apps are often:</p>
         <ul>
-            <li>Authoring Module: By integrating Twine, we are creating an "open" architecture 
-                that allows community members to update the game with their own cultural 
-                narratives and assets.</li>
-            <li>Telemetry Hook: A custom script within Unity parses Twine variables and logs 
-                them as clinical data points.</li>
-            <li>Experience Module: Users navigate an interface that visualizes progress through 
-                narrative progression and story milestones.</li>
+            <li><strong>Transactional:</strong> They treat patients as data points rather than people.</li>
+            <li><strong>Isolated:</strong> They ignore the social and cultural dimensions of healing.</li>
+            <li><strong>Inaccessible:</strong> Existing solutions like Twine can be too complex or code-heavy
+                for non-technical community members to use effectively.</li>
         </ul>
-
+        <p>When medical models are forced onto Indigenous contexts without adaptation, the result is low
+            engagement and a profound lack of trust. This technology should act as a bridge to better
+            health, not a barrier.
+        </p>
+ 
+        <h4>The Vision: CardioCare Quest</h4>
+            <p>In partnership with Dr. Jared Duval and the Playful Health Technology (PHT) Lab, we are
+                developing CardioCare Quest. This mobile health gaming environment is designed specifically
+                for the Navajo community, aiming to transform standard health trackers into a platform for
+                engaging users in a culturally grounded play via storytelling.
+            </p>
+        <p>Our role in this project is split into two core technical and creative responsibilities:</p>
+        <ul>
+            <li><strong>The Unified App Shell:</strong> A seamless Flutter-based mobile environment based
+                on the PHT Lab's NetGauge framework, ensuring a consistent and intuitive user experience
+                across all sub-games.</li>
+            <li><strong>The Exemplar Games:</strong> 3-5 specialized Twine narratives inspired by community
+                workshops. Each game focuses on a specific metric, such as dietary logs or blood pressure
+                tracking.</li>
+        </ul>
+        <p>By integrating these features, CardioCare Quest hopes to build a strong base for the future of
+            medical data collection whilst also having broader implications in the world of culturally
+            responsive digital health innovations.
+        </p>
+ 
         <h2 style="border-bottom: 2px solid #ccc;">Design Process</h2>
-        <ul>
-            <li>Our team will utilize a phase-based development approach. This begins with 
-                requirements acquisition via meetings with Dr. Jared Duval as well as team 
-                leads for the CardioCare Quest and NetGauge projects.</li>
-            <li>The first phase of our process will be focused on design and testing, where we 
-                will iteratively refine Figma designs and further discuss our progress in meetings 
-                with the lab.</li>
-            <li>The second phase will shift our focus into development and testing, where we 
-                will continuously reference NetGauge’s Twine-Flutter design to develop our 
-                own Twine integration. Additionally, we will employ the “Next 5” planning 
-                approach to foster weekly prototyping and progress meetings.Subsequently, 
-                we will still steadily be discussing and receiving feedback from the lab regarding 
-                development.</li>
-        </ul>
-        
-        
-        
-        <h2>Link to Demo</h2>
-        <p>N/A</p>
+            <p>Our team will utilize a phase-based development approach. This begins with requirements
+                acquisition via meetings with Dr. Jared Duval as well as team leads for the CardioCare Quest
+                and NetGauge projects.
+            </p>
+        <h4>Phase 1</h4>
+            <p>The first phase of our process will be focused on design and testing, where we will iteratively
+                refine Figma designs and further discuss our progress in meetings with the lab to ensure a
+                proper foundation for our Twine games and app shell.
+            </p>
+        <h4>Phase 2</h4>
+            <p>The second phase will shift our focus into development and testing, where we will begin
+                implementation details for our Twine games. Additionally, we will employ the "Next 5" planning
+                approach to foster weekly prototyping and progress meetings. Throughout this process, we will
+                still continuously be discussing and receiving feedback from the lab regarding development.
+            </p>
+ 
+        <h2 style="border-bottom: 2px solid #ccc;">Link to Demo</h2>
+        <p style="color: #aaa; font-style: italic;">Coming Soon</p>
     </div>
     
     <div class="container">

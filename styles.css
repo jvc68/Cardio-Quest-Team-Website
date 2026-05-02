@@ -129,7 +129,7 @@ h1, h2, h3, h4 {
 }
  
 .container.my-4 h2 {
-  font-size: 1.35rem;
+  font-size: 1.8rem;
   color: #0f6e56;
   margin-bottom: 14px;
   padding-bottom: 10px;
@@ -272,6 +272,13 @@ h1, h2, h3, h4 {
    DOCUMENTS PAGE
    ==================== */
 
+.document-image img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  display: block;
+}
+
 .link-container {
   display: grid;
   grid-template-columns: 20vh;
@@ -324,4 +331,41 @@ footer .text-body-secondary {
  
 footer .border-bottom {
   border-color: rgba(0,0,0,0.08) !important;
+}
+
+.solution-row {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* smaller space between image and text */
+  margin: 20px 0;
+}
+
+.solution-left img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+}
+
+.schedule-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+
+.video-section {
+  margin: 24px 0 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.video-section video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
